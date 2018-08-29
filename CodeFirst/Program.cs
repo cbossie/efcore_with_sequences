@@ -13,12 +13,6 @@ namespace EFCoreSequence
             p.TestUsers();
             p.TestUsersBulk();
             Console.Read();
-
-
-
-
-
-
         }
 
         public Program()
