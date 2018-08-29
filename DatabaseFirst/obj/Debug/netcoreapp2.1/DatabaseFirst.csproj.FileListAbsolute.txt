@@ -1,0 +1,11 @@
+C:\Users\cbossie\source\repos\EFCoreSequence\efcore_with_sequences\DatabaseFirst\obj\Debug\netcoreapp2.1\DatabaseFirst.csprojAssemblyReference.cache
+C:\Users\cbossie\source\repos\EFCoreSequence\efcore_with_sequences\DatabaseFirst\obj\Debug\netcoreapp2.1\DatabaseFirst.csproj.CoreCompileInputs.cache
+C:\Users\cbossie\source\repos\EFCoreSequence\efcore_with_sequences\DatabaseFirst\obj\Debug\netcoreapp2.1\DatabaseFirst.AssemblyInfoInputs.cache
+C:\Users\cbossie\source\repos\EFCoreSequence\efcore_with_sequences\DatabaseFirst\obj\Debug\netcoreapp2.1\DatabaseFirst.AssemblyInfo.cs
+C:\Users\cbossie\source\repos\EFCoreSequence\efcore_with_sequences\DatabaseFirst\bin\Debug\netcoreapp2.1\DatabaseFirst.deps.json
+C:\Users\cbossie\source\repos\EFCoreSequence\efcore_with_sequences\DatabaseFirst\bin\Debug\netcoreapp2.1\DatabaseFirst.runtimeconfig.json
+C:\Users\cbossie\source\repos\EFCoreSequence\efcore_with_sequences\DatabaseFirst\bin\Debug\netcoreapp2.1\DatabaseFirst.runtimeconfig.dev.json
+C:\Users\cbossie\source\repos\EFCoreSequence\efcore_with_sequences\DatabaseFirst\bin\Debug\netcoreapp2.1\DatabaseFirst.dll
+C:\Users\cbossie\source\repos\EFCoreSequence\efcore_with_sequences\DatabaseFirst\bin\Debug\netcoreapp2.1\DatabaseFirst.pdb
+C:\Users\cbossie\source\repos\EFCoreSequence\efcore_with_sequences\DatabaseFirst\obj\Debug\netcoreapp2.1\DatabaseFirst.dll
+C:\Users\cbossie\source\repos\EFCoreSequence\efcore_with_sequences\DatabaseFirst\obj\Debug\netcoreapp2.1\DatabaseFirst.pdb
