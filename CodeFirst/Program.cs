@@ -20,6 +20,21 @@ namespace EFCoreSequence
             
         }
 
+        public void GetUserTesting()
+        {
+            Repository rep = new Repository();
+            User u = rep.GetUser(-19956);
+            u.FirstName = "Jethro";
+            var role = u.UserRoles.FirstOrDefault();
+            if(role != null)
+            {
+                role.RoleName = "TULL";
+            }
+
+            var n = rep.SaveEntities();
+            int r = u.UserId;
+        }
+        
         public void TestUsers()
         {
             Repository rep = new Repository();

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using EFCoreSequence.EF;
 
 namespace EFCoreSequence
@@ -10,14 +11,30 @@ namespace EFCoreSequence
         {
             Console.WriteLine("Hello World!");
             var p = new Program();
-            p.TestUsers();
-            p.TestUsersBulk();
+            p.GetUserTesting();
+            //p.TestUsers();
+            //p.TestUsersBulk();
             Console.Read();
         }
 
         public Program()
         {
             
+        }
+
+        public void GetUserTesting()
+        {
+            Repository rep = new Repository();
+            User u = rep.GetUser(-19956);
+            u.FirstName = "Jethro";
+            var role = u.UserRoles.FirstOrDefault();
+            if(role != null)
+            {
+                role.RoleName = "TULL";
+            }
+
+            var n = rep.SaveEntities();
+            int r = u.UserId;
         }
 
         public void TestUsers()
