@@ -49,9 +49,7 @@ namespace EFCoreSequence.EF
                 entity.Property(a => a.RoleId).HasDefaultValueSql("NEXT VALUE FOR dbo.UserRoleIDs");
                 entity.HasKey(a => a.RoleId).HasName("PK_RoleId");                
                 entity.HasOne(a => a.User)
-                    .WithMany(a => a.UserRoles)
-                    .HasForeignKey(a => a.UserId)
-                    .HasConstraintName("FK_UserRole_User");
+                    .WithMany(a => a.UserRoles);
             });
 
 
