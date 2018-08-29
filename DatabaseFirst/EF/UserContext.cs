@@ -29,13 +29,13 @@ namespace EFCoreSequence.EF
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            // Since this is DB first, there is no "universal" sequence generator. We're doing it for individual tables.
+
             // Define sequences for creation
             modelBuilder.HasSequence("UserRoleIDs").IncrementsBy(2).StartsAt(5000);
             modelBuilder.HasSequence("roleAttributeIds").IncrementsBy(14).StartsAt(19777);
 
             // All tables without identity will use this sequence
-            modelBuilder.ForSqlServerUseSequenceHiLo("AllIDs");
-
             modelBuilder.Entity<User>(entity =>
             {
                 entity.HasKey(a => a.UserId).HasName("PK_UserId");
@@ -62,9 +62,7 @@ namespace EFCoreSequence.EF
                 entity.Property(a => a.Seq).IsRequired().HasDefaultValueSql("NEXT VALUE FOR dbo.roleAttributeIds");
                 entity.HasKey(a => a.RoleAttributeId).HasName("PK_UserRoles");
                 entity.HasOne(a => a.Role)
-                    .WithMany(a => a.Attributes)
-                    .HasForeignKey(a => a.UserRoleId)
-                    .HasConstraintName("FK_UserRoles_RoleAttributes");
+                    .WithMany(a => a.Attributes);
             });
 
 
