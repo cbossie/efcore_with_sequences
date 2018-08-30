@@ -13,7 +13,8 @@ namespace EFCoreSequence
             var p = new Program();
             p.GetUserTesting();
             //p.TestUsers();
-            //p.TestUsersBulk();
+            p.TestUsersBulk();
+            Console.WriteLine("Done");
             Console.Read();
         }
 

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using EFCoreSequence.EF;
 
 namespace EFCoreSequence
@@ -12,13 +13,14 @@ namespace EFCoreSequence
             var p = new Program();
             p.TestUsers();
             p.TestUsersBulk();
+            Console.WriteLine("Done");
             Console.Read();
         }
 
         public Program()
         {
             
-        }
+        }dotn
 
         public void GetUserTesting()
         {
